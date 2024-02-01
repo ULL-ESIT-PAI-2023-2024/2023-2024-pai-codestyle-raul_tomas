@@ -21,3 +21,13 @@ for (let i = 0; i < foo.length; i++) bar(foo[i]);
 // Allowed
 
 if (shortCondition()) foo();
+
+// Allowed
+
+class SomeClass {
+  constructor() {
+    // ...
+  }
+
+  method() {} // Closed brace on same line and no semicolon.
+}

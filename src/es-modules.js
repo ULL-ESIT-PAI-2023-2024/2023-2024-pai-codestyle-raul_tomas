@@ -28,10 +28,12 @@ import {short} from './long/path/to/a/file.js';
 import {aLongNameThatBreaksAlignment} from './long/path/to/a/file.js';
 
 // Export rules:
-export default class Foo { ... } // Do not use default exports:
-export class Foo { ... }
+export default class Foo { /* ... */ } // Do not use default exports
+
+export class Foo { /* ... */ }
+
 // Alternate style named exports:
-class Foo { ... }
+class Foo { /* ... */ }
 
 export {Foo};
 

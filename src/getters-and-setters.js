@@ -14,11 +14,12 @@
 // Allowed
 
 class Foo {
-  next() { return this.nextId; }
+  getNextId() { return this.nextId; }
 }
 
 // Disallowed
 
 class Foo {
-  get next() { return this.nextId++; }
+// Bad! Here it use the getter from Javascript and also modifies the value of the attribute
+  get nextId() { return this.nextId++; } 
 }
