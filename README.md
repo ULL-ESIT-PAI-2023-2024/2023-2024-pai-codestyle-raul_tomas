@@ -9,7 +9,9 @@ This directory is organised as follows:
       ├── bib          # Presentation bibliography and references
       ├── slides       # slides of your presentation (PDF is the preferred format)
       ├── tests        # Source code for tests (if applicable)
-      ├── src          # Source code (add subdirectories if necessary) 
+      ├── src          # Source code (add subdirectories if necessary)
+           ├── javascript_examples
+           ├── typescript_examples
       
 When you receive the link to this repository, clone it and use it to host all the material for the work to be done: slides, code, etc.
 
