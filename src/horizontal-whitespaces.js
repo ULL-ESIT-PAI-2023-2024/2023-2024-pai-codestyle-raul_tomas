@@ -11,12 +11,14 @@
  * @see {@link https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-codestyle-raul_tomas.git}
  */
 
-let firstNumber = 5;
-let secondNumber = 10;
+// Allowed
 
-// Allowed 
-console.log(`Here is a table of arithmetic operations:
-${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}
-${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}
-${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}
-${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`);
+if (condition) { // Whitespace after if
+  // ...
+} else {         // Whitespace after a closing curly brace
+  // ...
+}
+
+function foo({a: [{c: d}]}) { // No whitespace exception
+  // ...
+}
