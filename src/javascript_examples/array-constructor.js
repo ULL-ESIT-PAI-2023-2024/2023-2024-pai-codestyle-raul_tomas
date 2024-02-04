@@ -12,13 +12,11 @@
  */
 
 // Disallowed
-const wrongArray1 = new Array(value1, value2, value3);
-const wrongArray2 = new Array(value1, value2);
-const wrongArray3 = new Array(value1);
-const wrongArray4 = new Array();
+const wrongArray1 = new Array(value1, value2);
+const wrongArray2 = new Array(value1);
+const wrongArray3 = new Array();
 
 // Allowed
-const correctArray1 = [value1, value2, value3];
-const correctArray2 = [value1, value2];
-const correctArray3 = [value1];
-const correctArray4 = [];
+const correctArray1 = [value1, value2];
+const correctArray2 = [value1];
+const correctArray3 = [];

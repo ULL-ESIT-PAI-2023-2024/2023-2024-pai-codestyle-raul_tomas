@@ -12,11 +12,11 @@
  */
 
 /**
- * It does something
- * @param {string} required This parameter is always needed.
- * @param {string=} optional This parameter can be omitted.
+ * Calculates the possibility of passing an exam. 
+ * @param {string} timeStudying This parameter is always needed.
+ * @param {string=} haveFun This parameter can be omitted.
  */
-function doesSomething(required, optional = undefined) {}
+const passExam = function(timeStudying, haveFun = '0') {}
 
 /** @interface */
 class MyInterface {

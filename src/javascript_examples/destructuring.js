@@ -12,7 +12,8 @@
  */
 
 // Destructuring for variables
-const [firstPosition, secondPosition, thirdPosition, ...otherPositions] = someResults();
+const [firstPosition, secondPosition, 
+    thirdPosition, ...otherPositions] = someResults();
 let [, secondPositionb,, fourthPosition] = someArray;
 
 // Destructuring for function parameters
