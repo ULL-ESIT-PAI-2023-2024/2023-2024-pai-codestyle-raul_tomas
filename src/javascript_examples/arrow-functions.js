@@ -26,4 +26,4 @@ const addFunction = (numberParam, stringParam) => numberParam + Number(stringPar
  * This single expression body usage is illegal because the program logic does
  * not require returning a value and we're missing the `void` operator.
  */
-const func = () => anotherFunction();
+const oneFunction = () => anotherFunction();

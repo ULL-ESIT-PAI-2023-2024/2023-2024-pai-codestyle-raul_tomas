@@ -13,7 +13,7 @@
 
 function externalFunction() {
   // External function code
-  const internalFunction = function() {
+  const internalFunction = (parameters) => {
     // Internal function code
   };
   // More code from external function code

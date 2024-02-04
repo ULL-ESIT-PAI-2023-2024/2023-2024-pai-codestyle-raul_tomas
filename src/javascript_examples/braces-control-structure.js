@@ -16,13 +16,11 @@
 if (someVeryLongCondition())
   doSomething();
 
-for (let i = 0; i < foo.length; i++) bar(foo[i]);
+for (let i = 0; i < array.length; i++) doSomething(array[i]);
 
 // Allowed
 
-if (shortCondition()) foo();
-
-// Allowed
+if (shortCondition()) doSomething();
 
 class SomeClass {
   constructor() {

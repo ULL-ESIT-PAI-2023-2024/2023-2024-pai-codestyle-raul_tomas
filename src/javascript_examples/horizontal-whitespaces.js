@@ -19,6 +19,6 @@ if (condition) { // Whitespace after if
   // ...
 }
 
-function foo({a: [{c: d}]}) { // No whitespace exception
+function someFunction({value1: [{value2: value3}]}) { // No whitespace exception
   // ...
 }

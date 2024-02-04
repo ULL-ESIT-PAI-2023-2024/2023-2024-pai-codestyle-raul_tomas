@@ -11,7 +11,7 @@
  * @see {@link https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-codestyle-raul_tomas.git}
  */
 
-class Foo {
+class SomeClass {
   constructor() {
     /** @private @const {!Var} */
     this.var_ = computeVar();

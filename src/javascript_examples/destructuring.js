@@ -12,12 +12,12 @@
  */
 
 // Destructuring for variables
-const [a, b, c, ...rest] = someResults();
-let [, b,, d] = someArray;
+const [firstPosition, secondPosition, thirdPosition, ...otherPositions] = someResults();
+let [, secondPositionb,, fourthPosition] = someArray;
 
 // Destructuring for function parameters
 /** @param {!Array<number>=} param1 */
-function optionalDestructuring([a = 4, b = 2] = []) { … };
+function optionalDestructuring([firstValue = 4, secondValue = 2] = []) { /* … */ };
 
 // This is disallowed, always specify [] as the default value, for optional params
-function badDestructuring([a, b] = [4, 2]) { … }; 
+function badDestructuring([firstValue, secondValue] = [4, 2]) { /* … */ }; 

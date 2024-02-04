@@ -14,14 +14,14 @@
 // Instead of this:
 
 for (let i = 0; i < 10; i++) {
-  if (cond) {
+  if (condition) {
     /* ... */ // <- one more nesting level
   }
 }
 // We can write this:
 
 for (let i = 0; i < 10; i++) {
-  if (!cond) continue;
+  if (!condition) continue;
   /* ... */  // <- no extra nesting level
 }
 /*
