@@ -10,20 +10,18 @@
  * @since Feb 05 2024  
  * @see {@link https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-codestyle-raul_tomas.git}
  */
+// DISALLOWED
 
-/*
- * A "real constant" in JavaScript is one that is initialized 
- * using const and its value is not modified during execution time.
- */
+if (isRaining()) { alert("Do not go outside"); }
 
-const HOURS_IN_A_DAY = 24;
+if (isRaining())
+  alert("Do not go outside");
 
-const clientNumber = extractClientNumber();
+// ALLOWED
 
-// Variable
-let exponentNumber = 2;
+if (isRaining()) alert("Do not go outside");
 
-function foo() {
-  const realConstant = 7;
-  
+if (isRaining()) {
+  alert("Do not go outside");
 }
+
