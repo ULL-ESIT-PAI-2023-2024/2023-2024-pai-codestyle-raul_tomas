@@ -19,7 +19,7 @@ class UnnecessaryConstructor {
   constructor() {}
 }
 
-class UnnecessaryConstructorOverride extends Base {
+class UnnecessaryConstructorOverride extends BaseClass {
   constructor(value: number) {
     super(value);
   }

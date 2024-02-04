@@ -30,32 +30,28 @@ for (let i = 0; i < 10; i++) {
  */
 
 // Option 1:
-function pow(x, n) {
-  if (n < 0) {
-    alert("Negative 'n' not supported");
+function pow(baseNumber, exponentNumber) {
+  if (exponentNumber < 0) {
+    alert("Negative exponent not supported");
   } else {
-    let result = 1;
-
-    for (let i = 0; i < n; i++) {
-      result *= x;
+    let powerResult = 1;
+    for (let i = 0; i < exponentNumber; i++) {
+      powerResult *= baseNumber;
     }
-
-    return result;
+    return powerResult;
   }
 }
 
 // Option 2:
 function pow(x, n) {
-  if (n < 0) {
-    alert("Negative 'n' not supported");
-    return;
+  if (exponentNumber < 0) {
+    alert("Negative exponent not supported");
   }
-  let result = 1;
-  for (let i = 0; i < n; i++) {
-    result *= x;
+  let powerResult = 1;
+  for (let i = 0; i < exponentNumber; i++) {
+    powerResult *= baseNumber;
   }
-
-  return result;
+  return powerResult;
 }
 
 // The second one is more readable because the “special case” of n < 0 is handled early on. Once the check is done we can move on to the “main” code flow without the need for additional nesting.

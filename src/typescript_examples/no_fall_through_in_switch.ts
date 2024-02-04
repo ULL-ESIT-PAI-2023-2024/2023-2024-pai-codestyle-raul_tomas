@@ -12,10 +12,18 @@
  */
 
 
-switch (x) {
-  case X:
-    doSomething();
+switch (trafficLightColor) {
+  case 'yellow':
+    slowDown();
     // fall through - not allowed!
-  case Y:
+  case 'green':
+    continueDriving();
+    break;
+  case 'red':
+    stopTheCar();
+    break;
+  default:
     // ...
+    break;
 }
+
