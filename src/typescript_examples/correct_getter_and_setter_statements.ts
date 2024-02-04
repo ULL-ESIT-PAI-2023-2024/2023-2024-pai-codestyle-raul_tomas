@@ -27,14 +27,13 @@ class Bar {
 
 // ALLOWED
 
-class FooClassExample {
-  private wrappedBar = '';
-  get bar() {
-    return this.wrappedBar || 'bar';
+class Car {
+  private carLicensePlate = '';
+  get license() {
+    return this.carLicensePlate || '1234 ABC';
   }
-
-  set bar(wrapped: string) {
-    this.wrappedBar = wrapped.trim();
+  set license(wrappedPlate: string) {
+    this.carLicensePlate = wrappedPlate.trim();
   }
 }
 

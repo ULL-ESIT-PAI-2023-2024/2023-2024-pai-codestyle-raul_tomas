@@ -4,26 +4,24 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas
  * 
- * @fileoverview Code example to learn the Google Typescript style
+ * @fileoverview Code example to learn the Google Javascript style
  * @author Raúl Álvarez Pérez
  * @author Tomás De Armas Déniz
  * @since Feb 05 2024  
  * @see {@link https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-codestyle-raul_tomas.git}
  */
+// DISALLOWED
 
+if (isRaining()) { alert("Do not go outside"); }
 
-switch (trafficLightColor) {
-  case 'yellow':
-    slowDown();
-    // fall through - not allowed!
-  case 'green':
-    continueDriving();
-    break;
-  case 'red':
-    stopTheCar();
-    break;
-  default:
-    // ...
-    break;
+if (isRaining())
+  alert("Do not go outside");
+
+// ALLOWED
+
+if (isRaining()) alert("Do not go outside");
+
+if (isRaining()) {
+  alert("Do not go outside");
 }
 

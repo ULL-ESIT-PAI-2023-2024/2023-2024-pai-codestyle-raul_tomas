@@ -16,12 +16,12 @@
  * using const and its value is not modified during execution time.
  */
 
-const CONSTANT_NUMBER = 5;
+const HOURS_IN_A_DAY = 24;
 
 const clientNumber = extractClientNumber();
 
 // Variable
-let variableExample = 0;
+let exponentNumber = 2;
 
 function foo() {
   const realConstant = 7;
